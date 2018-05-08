@@ -41,7 +41,7 @@ const newContent = (type) => {
 							<button type="button" class="btn btn-secondary" onclick="newContent('')">Брошура</button>
 							<button type="button" class="btn btn-secondary" onclick="newContent('')">Презентація</button>
 							<button type="button" class="btn btn-secondary" onclick="newContent('')">Основний текст</button>
-							<button type="button" class="btn btn-secondary" onclick="newContent('')">Брошура</button>
+							<button type="button" class="btn btn-secondary" onclick="newContent('')">Карта знань</button>
 							<button type="button" class="btn btn-secondary" onclick="newContent('')">Тести</button>								
 						</div>
 					</div>
