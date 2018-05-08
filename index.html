@@ -1,5 +1,5 @@
 <!doctype html>
-  <head>
+  <head class="touchevents">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -26,10 +26,10 @@
 					</div>
 					<div class="row">
 							<div class="col-12 col-lg-4 col-md-4 col-sm-4">
-								<button type="button" class="btn btn-secondary">Головна</button>
+								<button type="button" class="btn btn-secondary" onclick="newContent('main')">Головна</button>
 							</div>
 							<div class="col-12 col-lg-4 col-md-4 col-sm-4">
-								<button type="button" class="btn btn-secondary">Про нас</button>		
+								<button type="button" class="btn btn-secondary" onclick="newContent('aboutUs')">Про нас</button>		
 							</div>
 							<div class="col-12 col-lg-4 col-md-4 col-sm-4">
 									<a href="http://school-1-timch.klasna.com" target="_blank"><button type="button" class="btn btn-secondary">Сайт школи</button></a>
@@ -39,9 +39,7 @@
       </header>
 
       <main role="main" class="cover">
-				<div id="content" class="container">
-					
-				</div>
+				<div id="content" class="container"></div>
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -60,5 +58,6 @@
         </div>
       </footer>
 		</div>
-  </body>
+	</body>
+	<script src="script.js"></script>
 </html>

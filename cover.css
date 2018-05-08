@@ -17,14 +17,26 @@ a:hover {
   border: .05rem solid #333;
 }
 
-.btn-secondary:hover {
+.no-touchevents .btn-secondary:hover {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #333;
   border: .05rem solid #fff;
 }
 
+.touchevents .btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #333;
+}
 
+.touchevents .btn-secondary:active {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #333;
+  border: .05rem solid #fff;
+}
 /*
  * Base structure
  */
