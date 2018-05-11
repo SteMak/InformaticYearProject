@@ -23,28 +23,33 @@ const newHeader = () => {
 			</div>`
 	} else {
 		document.getElementById('menu').innerHTML = 
-			`<nav class="navbar navbar-dark">
-				<div class="navbar-brand"></div>
-				<button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			`<div class="navbar-dark col-12">
+				<div class="row">
+					<div class="scol masthead">
+						<h3 class="masthead-brand">Проект "ІДК"</h3>
+					</div>
+					<div class="scol">
+						<button class="btn navbar-toggler scol" type="button" data-toggle="collapse" data-target="#mobileMenu">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<h4 class="fcol">інформатика 9го класу</h4>
+				</div>
 				<div class="collapse navbar-collapse" id="mobileMenu">	
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<button type="button" class="btn btn-secondary" onclick="newContent('main')">Головна</button>
+							<button type="button" class="btn btn-secondary" onclick="newContent('main')" data-toggle="collapse" data-target="#mobileMenu">Головна</button>
 						</li>
 						<li class="nav-item">
-							<button type="button" class="btn btn-secondary" onclick="newContent('aboutUs')">Про нас</button>	
+							<button type="button" class="btn btn-secondary" onclick="newContent('aboutUs')" data-toggle="collapse" data-target="#mobileMenu">Про нас</button>	
 						</li>
 						<li class="nav-item">
-							<a href="http://school-1-timch.klasna.com" target="_blank"><button type="button" class="btn btn-secondary">Сайт школи</button></a>
+							<a href="http://school-1-timch.klasna.com" target="_blank"><button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#mobileMenu">Сайт школи</button></a>
 						</li>
 					</ul>
 				</div>
-			</nav>
-			<div class="row">
-				<h1 class="col-lg-12 col-md-12 col-sm-12 masthead-brand">Проект "ІДК"</h1>
-				<h3 class="col-lg-12 col-md-12 col-sm-12">інформатика у дев'ятому класі</h3>
 			</div>`
 	}
 }
