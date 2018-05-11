@@ -56,7 +56,7 @@ const newHeader = () => {
 const newContent = (type) => {
 	if(type == 'bdish') {
 		document.getElementById('content').innerHTML = 
-		  `<img style="-webkit-user-select: none;cursor: zoom-in;" src="bdish.gif" width="${document.getElementById('content').clientWidth}" height="${document.getElementById('content').clientWidth * 0.558}">`;
+		  `<img style="-webkit-user-select: none;cursor: zoom-in;" src="kotic.png" width="${document.getElementById('content').clientWidth}" height="${document.getElementById('content').clientWidth}">`;
   }
 
 	if(type == 'aboutUs') {
