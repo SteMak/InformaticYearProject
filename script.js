@@ -24,15 +24,9 @@ const newHeader = () => {
 	} else {
 		document.getElementById('menu').innerHTML = 
 			`<div class="row">
-				<h1 class="col-lg-12 col-md-12 col-sm-12 masthead-brand">Проект "ІДК"</h1>
-				<h3 class="col-lg-12 col-md-12 col-sm-12">(інформатика у дев'ятому класі)</h3>
-			</div>
-			<div class="row">
-				<div class="col-6">
+				<div class="col-6"></div>
+				<div class=" col-6">
 					<button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">Меню</button>
-				</div>	
-				<div class="col-6">
-					<button class="navbar-toggler btn btn-secondary" type="button" onclick="newContent('bdish')">Клік</button>
 				</div>
 			</div>
 			<nav class="navbar navbar-dark">
@@ -49,12 +43,16 @@ const newHeader = () => {
 						</li>
 					</ul>
 				</div>
-			</nav>`
+			</nav>
+			<div class="row">
+				<h1 class="col-lg-12 col-md-12 col-sm-12 masthead-brand">Проект "ІДК"</h1>
+				<h3 class="col-lg-12 col-md-12 col-sm-12">інформатика у дев'ятому класі</h3>
+			</div>`
 	}
 }
 
 const newContent = (type) => {
-	if(type == 'bdish') {
+	if(type == 'cat') {
 		document.getElementById('content').innerHTML = 
 		  `<img style="-webkit-user-select: none;cursor: zoom-in;" src="kotic.png" width="${document.getElementById('content').clientWidth}" height="${document.getElementById('content').clientWidth}">`;
   }
