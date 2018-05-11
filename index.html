@@ -1,5 +1,5 @@
 <!doctype html>
-  <head class="touchevents">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -18,28 +18,12 @@
   <body class="text-center">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="container">
-					<div class="row">
-							<h1 class="col-lg-12 col-md-12 col-sm-12 masthead-brand">Проект "ІДК"</h1>
-							<h3 class="col-lg-12 col-md-12 col-sm-12">(інформатика у дев'ятому класі)</h3>
-					</div>
-					<div class="row">
-							<div class="col-12 col-lg-4 col-md-4 col-sm-4">
-								<button type="button" class="btn btn-secondary" onclick="newContent('main')">Головна</button>
-							</div>
-							<div class="col-12 col-lg-4 col-md-4 col-sm-4">
-								<button type="button" class="btn btn-secondary" onclick="newContent('aboutUs')">Про нас</button>		
-							</div>
-							<div class="col-12 col-lg-4 col-md-4 col-sm-4">
-									<a href="http://school-1-timch.klasna.com" target="_blank"><button type="button" class="btn btn-secondary">Сайт школи</button></a>
-							</div>
-					</div>
-        </div>
+      <header class="masthead mb-auto container">
+        <div class="" id="menu"></div>
       </header>
 
-      <main role="main" class="cover">
-				<div id="content" class="container"></div>
+      <main role="main" class="cover mastmain container">
+				<div id="content" class=""></div>
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -61,4 +45,7 @@
 	</body>
 	<script src="script.js"></script>
 	<script src="touchevents.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
 </html>
