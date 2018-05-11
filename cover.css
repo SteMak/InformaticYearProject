@@ -33,6 +33,7 @@ a:hover {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #555;
+  box-shadow: none;
   border: .05rem solid #333;
 }
 
@@ -144,6 +145,10 @@ body {
 
 .btn {
   width: 100%
+}
+
+.navbar-toggler {
+  width: 60px;
 }
 
 .mastmain {

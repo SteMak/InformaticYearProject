@@ -23,13 +23,11 @@ const newHeader = () => {
 			</div>`
 	} else {
 		document.getElementById('menu').innerHTML = 
-			`<div class="row">
-				<div class="col-6"></div>
-				<div class=" col-6">
-					<button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">Меню</button>
-				</div>
-			</div>
-			<nav class="navbar navbar-dark">
+			`<nav class="navbar navbar-dark">
+				<div class="navbar-brand"></div>
+				<button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<div class="collapse navbar-collapse" id="mobileMenu">	
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
