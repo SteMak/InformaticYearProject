@@ -184,15 +184,16 @@ body {
 
 .scol {
   margin: 0 -1px 0 auto;
-  height: 41px
+  height: 45px;
+  width: 70px;
 }
 
 .zcol {
   margin: 0 auto 0 0;
-  font-size: 25px;
+  font-size: 29.45px;
 }
 
 .fcol {
   margin: 0 auto 0 0;
-  font-size: 13px;
+  font-size: 12px;
 }

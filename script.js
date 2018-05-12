@@ -27,7 +27,7 @@ const newHeader = () => {
 				<div class="row">
 					<div class="text-left">
 						<h2 class="zcol">Проект "ІДК"</h2>
-						<h3 class="fcol">інформатика 9го класу</h3>
+						<h3 class="fcol">інформатика дев'ятого класу</h3>
 					</div>
 					<div class="scol">
 						<button class="btn navbar-toggler scol" type="button" data-toggle="collapse" data-target="#mobileMenu">
