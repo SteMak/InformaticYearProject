@@ -25,17 +25,15 @@ const newHeader = () => {
 		document.getElementById('menu').innerHTML = 
 			`<div class="navbar-dark col-12">
 				<div class="row">
-					<div class="scol masthead">
-						<h2 class="masthead-brand">Проект "ІДК"</h2>
+					<div class="text-left">
+						<h2 class="zcol">Проект "ІДК"</h2>
+						<h3 class="fcol">інформатика 9го класу</h3>
 					</div>
 					<div class="scol">
 						<button class="btn navbar-toggler scol" type="button" data-toggle="collapse" data-target="#mobileMenu">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 					</div>
-				</div>
-				<div class="row">
-					<h3 class="fcol">інформатика 9го класу</h3>
 				</div>
 				<div class="collapse navbar-collapse" id="mobileMenu">	
 					<ul class="navbar-nav mr-auto">
