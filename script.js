@@ -64,7 +64,7 @@ const newContent = (type) => {
 		document.getElementById('content').innerHTML = 
 		  `<div class="row">
 				<div class="col">
-					<h4>Наші працівники</h4>
+					<h5>Наші працівники</h5>
 				</div>
 			</div>
 			<div class="row">
@@ -87,7 +87,7 @@ const newContent = (type) => {
       document.getElementById('content').innerHTML = 
 				`<div class="row">
 					<div class="col">
-						<h4>Головна</h4>
+						<h5>Головна</h5>
 					</div>
 				</div>
 				<div class="row">
@@ -106,7 +106,7 @@ const newContent = (type) => {
 				`<div>
 					<div class="row">
 						<div class="col">
-							<h4>Дерево знань</h4>
+							<h5>Дерево знань</h5>
 						</div>
 					</div>
 					<div class="row">
