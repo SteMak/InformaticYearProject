@@ -26,7 +26,7 @@ const newHeader = () => {
 			`<div class="navbar-dark col-12">
 				<div class="row">
 					<div class="scol masthead">
-						<h3 class="masthead-brand">Проект "ІДК"</h3>
+						<h2 class="masthead-brand">Проект "ІДК"</h2>
 					</div>
 					<div class="scol">
 						<button class="btn navbar-toggler scol" type="button" data-toggle="collapse" data-target="#mobileMenu">
@@ -35,7 +35,7 @@ const newHeader = () => {
 					</div>
 				</div>
 				<div class="row">
-					<h4 class="fcol">інформатика 9го класу</h4>
+					<h3 class="fcol">інформатика 9го класу</h3>
 				</div>
 				<div class="collapse navbar-collapse" id="mobileMenu">	
 					<ul class="navbar-nav mr-auto">

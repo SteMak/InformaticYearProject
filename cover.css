@@ -184,7 +184,7 @@ body {
 }
 
 .scol {
-  margin: 0 0 0 auto;
+  margin: 0 -1px 0 auto;
 }
 
 .fcol {
