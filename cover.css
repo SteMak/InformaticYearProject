@@ -17,22 +17,22 @@ a:hover {
 .content-btn {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #255b73;
+  background-color: #3d516d;
   border: .05rem solid #283a52;
 }
 
 .no-touchevents .content-btn:hover {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #3b97bf;
-  border: .05rem solid #3b97bf;
+  background-color: #1a2635;
+  border: .05rem solid #1a2635;
 }
 
 .touchevents .content-btn:hover,
 .touchevents .content-btn:focus {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #255b73;
+  background-color: #3d516d;
   box-shadow: none;
   border: .05rem solid #283a52;
 }
@@ -40,8 +40,8 @@ a:hover {
 .touchevents .content-btn:active {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #3b97bf;
-  border: .05rem solid #3b97bf;
+  background-color: #1a2635;
+  border: .05rem solid #1a2635;
 }
 
 .menu-btn {
@@ -74,6 +74,11 @@ a:hover {
   border: .05rem solid #3d516d;
 }
 
+.menu-col {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .navbar-toggler:focus,
 .navbar-toggler:active {
   box-shadow: none;
@@ -82,7 +87,8 @@ a:hover {
 
 .navbar-toggler {
   border: none;
-  background-color: #234c5f;
+  background-color: none;
+  height: 45px;
 }
 
 /* Custom default fonts */
