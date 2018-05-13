@@ -14,34 +14,75 @@ a:hover {
   box-shadow: none;
 }
 
-.btn-secondary {
+.content-btn {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #555;
-  border: .05rem solid #333;
+  background-color: #255b73;
+  border: .05rem solid #283a52;
 }
 
-.no-touchevents .btn-secondary:hover {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-.touchevents .btn-secondary:hover,
-.touchevents .btn-secondary:focus {
+.no-touchevents .content-btn:hover {
   color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #555;
+  background-color: #3b97bf;
+  border: .05rem solid #3b97bf;
+}
+
+.touchevents .content-btn:hover,
+.touchevents .content-btn:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #255b73;
   box-shadow: none;
-  border: .05rem solid #333;
+  border: .05rem solid #283a52;
 }
 
-.touchevents .btn-secondary:active {
-  color: #333;
+.touchevents .content-btn:active {
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #3b97bf;
+  border: .05rem solid #3b97bf;
+}
+
+.menu-btn {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #1a2635;
+  border: .05rem solid #283a52;
+}
+
+.no-touchevents .menu-btn:hover {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #3d516d;
+  border: .05rem solid #3d516d;
+}
+
+.touchevents .menu-btn:hover,
+.touchevents .menu-btn:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #1a2635;
+  box-shadow: none;
+  border: .05rem solid #283a52;
+}
+
+.touchevents .menu-btn:active {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #3d516d;
+  border: .05rem solid #3d516d;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #234c5f;
 }
 
 /* Custom default fonts */
@@ -96,7 +137,7 @@ h1, h2, h3 {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #283a52;
 }
 
 body {
@@ -172,28 +213,17 @@ body {
   width: 100%
 }
 
-.navbar-toggler {
-  width: 60px;
-  right: 0px;
-}
-
 .mastmain {
   margin-bottom: 40px;
   margin-top: 30px;
 }
 
-.scol {
-  margin: 0 -1px 0 auto;
-  height: 45px;
-  width: 70px;
-}
 
 .zcol {
-  margin: 0 auto 0 0;
+  margin-bottom: 0;
   font-size: 29.45px;
 }
 
 .fcol {
-  margin: 0 auto 0 0;
   font-size: 12px;
 }
