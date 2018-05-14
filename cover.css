@@ -74,9 +74,15 @@ a:hover {
   border: .05rem solid #3d516d;
 }
 
-.menu-col {
+.menu-col-left {  
+  padding-right: 2px;
+}
+.menu-col-center {
   padding-left: 2px;
   padding-right: 2px;
+}
+.menu-col-right {
+  padding-left: 2px;
 }
 
 .navbar-toggler:focus,

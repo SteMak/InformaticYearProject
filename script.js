@@ -3,21 +3,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	newHeader();
 });
 
-function reuest(url) {
-	let result = [];
-	
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', url, false);
-	xhr.send();
-	if (xhr.status == 200) {
-		result = JSON.parse(xhr.responseText);
-	}
-
-	return result;
-};
-
-const testData = reuest('tests.json');
-
 const newHeader = () => {
 	if (document.getElementsByClassName('no-touchevents').length > 0) {
 		document.getElementById('menu').innerHTML = 
@@ -26,13 +11,13 @@ const newHeader = () => {
 				<h3 class="col-lg-12 col-md-12 col-sm-12">(інформатика у дев'ятому класі)</h3>
 			</div>
 			<div class="row">
-				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col">
+				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col-left">
 					<button type="button" class="btn btn-secondary menu-btn" onclick="newContent('main')">Головна</button>
 				</div>
-				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col">
+				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col-center">
 					<button type="button" class="btn btn-secondary menu-btn" onclick="newContent('aboutUs')">Про нас</button>		
 				</div>
-				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col">
+				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col-right">
 					<a href="http://school-1-timch.klasna.com" target="_blank"><button type="button" class="btn btn-secondary menu-btn">Сайт школи</button></a>
 				</div>
 			</div>`
@@ -113,7 +98,7 @@ const newContent = (type) => {
 					<button type="button" class="btn content-btn" onclick="newContent('media')">Презентація</button>
 					<button type="button" class="btn content-btn" onclick="newContent('text')">Основний текст</button>
 					<button type="button" class="btn content-btn" onclick="newContent('map')">Дерево знань</button>
-					<button type="button" class="btn content-btn" onclick="newContent('test')">Тести</button>								
+					<button type="button" class="btn content-btn" onclick="makeTest(0, 0)">Тести</button>								
 				</div>
 			</div>`;
 	}
@@ -159,7 +144,7 @@ const newContent = (type) => {
 											<li>Відкриття</li>
 											<li>Винаходи</li>
 											<li>Пропозиції</li>
-											<li>Комерційні таэмниці</li>
+											<li>Комерційні таємниці</li>
 											<li>Авторські знаки</li>
 										</ol>
 									</li>
@@ -214,7 +199,7 @@ const newContent = (type) => {
 									<li>Дизайн презентації
 										<ol>
 											<li>Композиція</li>
-											<li>Кольористика</li>
+											<li>Колористика</li>
 											<li>Ергономіка</li>
 										</ol>
 									</li>
@@ -233,7 +218,7 @@ const newContent = (type) => {
 									<li>Інформаційна безпека
 										<ol>
 											<li>Доступність</li>
-											<li>Конфединційність</li>
+											<li>Конфіденційність</li>
 											<li>Цілісність</li>
 										</ol>
 									</li>
@@ -259,13 +244,54 @@ const newContent = (type) => {
 								</ul>
 							</li>
 							<li>Комп’ютерне моделювання
-
-							</li>
-							<li>Табличні величини та алгоритми їх опрацювання
-
+								<ul>
+									<li>Комп'ютерні моделі
+										<ol>
+											<li>Математичні</li>
+											<li>Імітаційні</li>
+											<li>Графічні</li>
+										</ol>
+									</li>
+									<li>Етапи комп’ютерного моделювання
+										<ol>
+											<li>Постановка задачі</li>
+											<li>Побудова моделі</li>
+											<li>Складання алгоритму</li>
+											<li>Дослідження результатів</li>
+										</ol>
+									</li>
+									<li>Карти знань
+										<ol>
+											<li>Ментальні</li>
+											<li>Асоціативні</li>
+										</ol>
+									</li>
+								</ul>
 							</li>
 							<li>Комп’ютерні публікації
-
+								<ul>
+									<li>Комп'ютерні моделі
+										<ol>
+											<li>Математичні</li>
+											<li>Імітаційні</li>
+											<li>Графічні</li>
+										</ol>
+									</li>
+									<li>Етапи комп’ютерного моделювання
+										<ol>
+											<li>Постановка задачі</li>
+											<li>Побудова моделі</li>
+											<li>Складання алгоритму</li>
+											<li>Дослідження результатів</li>
+										</ol>
+									</li>
+									<li>Карти знань
+										<ol>
+											<li>Ментальні</li>
+											<li>Асоціативні</li>
+										</ol>
+									</li>
+								</ul>
 							</li>
 							<li>Комп’ютерна графіка. Векторний графічний редактор
 
@@ -281,81 +307,4 @@ const newContent = (type) => {
 				</div>
 			</div>`;
 	}
-
-	if (type == 'test') {
-			makeTest(0, 0);
-	}
-}
-
-let count = 0;
-let acc = 0;
-let currentRight;
-
-const answer = (id) => {
-	id == currentRight ? acc++: acc;
-	makeTest()
-}
-
-const makeTest = () => {
-	const quantQuest = testData.length;
-	
-	if (count == quantQuest) {
-		const score = 12 / quantQuest * acc;
-		document.getElementById('content').innerHTML =
-			`<div class="row">
-				<div class="col">
-					<h4>Ваш вирішили ${acc} із ${quantQuest} ${quantQuest % 10 == 1 && quantQuest != 11 ? 'завдання': 'завдань'}.</h4>
-					<h4>Ви отримали: ${score} балів ${score == 0 ? '&#128566': score <= 2 ? '&#128544':score <= 4 ? '&#128530': score <= 7 ? '&#128528': score <= 9 ? '&#128534': score <= 11 ? '&#128527': '&#128522'}</h4>
-					<button type="button" class="btn content-btn" onclick="count = 0; acc = 0; makeTest()">Пройти тест знову</button>
-				</div>
-			</div>`
-		return
-	}
-
-
-	const shuffle = (array) => {
-		let currentIndex = array.length, temporaryValue, randomIndex;
-		while (0 !== currentIndex) {
-			randomIndex = Math.floor(Math.random() * currentIndex);
-			currentIndex -= 1;
-			temporaryValue = array[currentIndex];
-			array[currentIndex] = array[randomIndex];
-			array[randomIndex] = temporaryValue;
-		}
-	
-		return array;
-	}
-
-
-	const answers = shuffle(testData[count].answers).sort(() => Math.random() - 0.5);
-	const question = testData[count].question;
-	currentRight = testData[count].right;
-	
-	const answersGen = () => {
-		count++;
-		let result = ``;
-		for (let i = 0; i < answers.length; i++) {
-			result += `<button type="button" class="btn content-btn" onclick="answer(${answers[i].id})">${answers[i].answer}</button>`;
-		}
-		result += `<button type="button" class="btn content-btn" onclick="makeTest()">Я не знаю</button>`;
-
-		return result;
-	}
-
-	document.getElementById('content').innerHTML =
-		`<div class="row">
-			<div class="col text-left">
-				<h4>Тест №${count + 1}/${quantQuest}</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<h4>${question}</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				${answersGen()}
-			</div>
-		</div>`;
 }
