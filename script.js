@@ -96,7 +96,7 @@ const newContent = (type) => {
 				<div class="col">
 					<button type="button" class="btn content-btn" onclick="newContent('info')">Брошура</button>
 					<button type="button" class="btn content-btn" onclick="newContent('media')">Презентація</button>
-					<button type="button" class="btn content-btn" onclick="newContent('text')">Основний текст</button>
+					<button type="button" class="btn content-btn" onclick="makeText()">Текстова база</button>
 					<button type="button" class="btn content-btn" onclick="newContent('map')">Дерево знань</button>
 					<button type="button" class="btn content-btn" onclick="makeTest(0, 0)">Тести</button>								
 				</div>
@@ -108,11 +108,7 @@ const newContent = (type) => {
 	}
 
 	if (type == 'media') {
-		
-	}
 
-	if (type == 'text') {
-		
 	}
 
 	if (type == 'map') {

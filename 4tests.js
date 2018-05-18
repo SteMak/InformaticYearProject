@@ -26,7 +26,7 @@ const makeTest = () => {
 	const quantQuest = testData.length;
 	
 	if (count == quantQuest) {
-		const score = 12 / quantQuest * acc;
+		const score = Math.round(12 / quantQuest * acc);
 		document.getElementById('content').innerHTML =
 			`<div class="row">
 				<div class="col">
