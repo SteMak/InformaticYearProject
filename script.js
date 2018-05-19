@@ -95,7 +95,7 @@ const newContent = (type) => {
 			<div class="row">
 				<div class="col">
 					<button type="button" class="btn content-btn" onclick="newContent('info')">Буклет</button>
-					<button type="button" class="btn content-btn" onclick="makeMedia(true)">Презентація</button>
+					<button type="button" class="btn content-btn" onclick="makeMedia(0)">Презентація</button>
 					<button type="button" class="btn content-btn" onclick="makeText()">Текстова база</button>
 					<button type="button" class="btn content-btn" onclick="makeMap()">Дерево знань</button>
 					<button type="button" class="btn content-btn" onclick="makeTest(true)">Тести</button>								
