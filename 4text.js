@@ -40,12 +40,12 @@ const makeText = () => {
 
 	document.getElementById('content').innerHTML =
 		`<div class="row">
-			<div class="col text-left">
+			<div class="col">
 				<h4>Текстова база</h4>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col text-left">
 				${paragrafGen()}
 			</div>
 		</div>`;

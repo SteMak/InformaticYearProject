@@ -22,7 +22,11 @@ const answer = (id) => {
 	makeTest()
 }
 
-const makeTest = () => {
+const makeTest = (kik) => {
+	if (kik) {
+		count = 0;
+		acc = 0;
+	}
 	const quantQuest = testData.length;
 	
 	if (count == quantQuest) {
@@ -32,7 +36,7 @@ const makeTest = () => {
 				<div class="col">
 					<h4>Ваш вирішили ${acc} із ${quantQuest} ${quantQuest % 10 == 1 && quantQuest != 11 ? 'завдання': 'завдань'}.</h4>
 					<h4>Ви отримали: ${score} балів ${score == 0 ? '&#128566': score <= 2 ? '&#128544':score <= 4 ? '&#128542': score <= 7 ? '&#128530': score <= 9 ? '&#128528': score <= 11 ? '&#128527': '&#128522'}</h4>
-					<button type="button" class="btn content-btn" onclick="count = 0; acc = 0; makeTest()">Пройти тест ще раз</button>
+					<button type="button" class="btn content-btn" onclick="makeTest(true)">Пройти тест ще раз</button>
 				</div>
 			</div>`
 		return
@@ -70,12 +74,12 @@ const makeTest = () => {
 
 	document.getElementById('content').innerHTML =
 		`<div class="row">
-			<div class="col text-left">
+			<div class="col">
 				<h4>Тест №${count + 1}/${quantQuest}</h4>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col text-left">
 				<h4>${question}</h4>
 			</div>
 		</div>

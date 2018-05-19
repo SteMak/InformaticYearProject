@@ -201,6 +201,10 @@ body {
   border-bottom-color: #fff;
 }
 
+iframe {
+  border: none;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
