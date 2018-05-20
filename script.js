@@ -11,13 +11,13 @@ const newHeader = () => {
 				<h3 class="col-lg-12 col-md-12 col-sm-12">(інформатика у дев'ятому класі)</h3>
 			</div>
 			<div class="row">
-				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col-left">
+				<div class="${document.getElementById('menu').clientWidth >= 510 ? 'menu-col-left col-4': 'col-12'}">
 					<button type="button" class="btn btn-secondary menu-btn" onclick="newContent('main')">Головна</button>
 				</div>
-				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col-center">
+				<div class="${document.getElementById('menu').clientWidth >= 510 ? 'menu-col-center col-4': 'col-12'}">
 					<button type="button" class="btn btn-secondary menu-btn" onclick="newContent('aboutUs')">Про нас</button>		
 				</div>
-				<div class="col-12 col-lg-4 col-md-4 col-sm-4 menu-col-right">
+				<div class="${document.getElementById('menu').clientWidth >= 510 ? 'menu-col-right col-4': 'col-12'}">
 					<a href="http://school-1-timch.klasna.com" target="_blank"><button type="button" class="btn btn-secondary menu-btn">Сайт школи</button></a>
 				</div>
 			</div>`

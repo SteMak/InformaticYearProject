@@ -80,7 +80,7 @@ const makeTest = (kik) => {
 		</div>
 		<div class="row">
 			<div class="col text-left">
-				<h4>${question}</h4>
+				<h5>${question}</h5>
 			</div>
 		</div>
 		<div class="row">
