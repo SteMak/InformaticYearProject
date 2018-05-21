@@ -117,7 +117,7 @@ const newContent = (type) => {
 						<ul>
 							<li>Пригадати курс інформатики дев'ятого класу</li>
 							<li>Знайти основні відомості з нашого підручника</li>
-							<li>Провтикати півгодинки в компютер із користю</li>
+							<li>Провтикати півгодинки в комп'ютер із користю</li>
 							<li>Навчиться користуватися кнопками навігації (Меню)</li>
 						</ul>
 
@@ -137,7 +137,7 @@ const newContent = (type) => {
 						<ul>
 							<li>Пригадати курс інформатики дев'ятого класу</li>
 							<li>Знайти основні відомості з нашого підручника</li>
-							<li>Провтикати півгодинки в компютер із користю</li>
+							<li>Провтикати півгодинки в комп'ютер із користю</li>
 							<li>Навчиться користуватися кнопками навігації (Меню)</li>
 						</ul>
 						<img style="-webkit-user-select: none;cursor: zoom-in;" src="book.png" width="${document.getElementById('content').clientWidth / 2.25}" height="${document.getElementById('content').clientWidth / 2.25 * 1.47}" onclick="makeBookPC()">
