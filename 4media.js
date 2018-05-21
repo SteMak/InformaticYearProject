@@ -1,4 +1,6 @@
 const makeMedia = (count) => {
+	let big = document.getElementById('content').clientWidth >= 510;
+	let k = big ? document.getElementById('content').clientWidth/2-15: document.getElementById('content').clientWidth;
 	let result = 
 		`<div class="row">
 			<div class="col">
@@ -13,11 +15,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/0.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/0.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 1) {
@@ -28,7 +30,7 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
+				<div class="prez col">
 					<button type="button" class="btn content-btn" onclick="makeMedia(2)">Розділ 1: Інформаційні технології у суспільстві</button>
 					<button type="button" class="btn content-btn" onclick="makeMedia(3)">Розділ 2: Мережеві технології</button>
 					<button type="button" class="btn content-btn" onclick="makeMedia(4)">Розділ 3: Комп’ютерні презентації</button>
@@ -49,11 +51,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/2.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/2.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 3) {
@@ -64,11 +66,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/3.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/3.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 4) {
@@ -79,11 +81,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/4.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/4.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 5) {
@@ -94,11 +96,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/5.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/5.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 6) {
@@ -109,11 +111,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/6.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/6.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 7) {
@@ -124,11 +126,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/7.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/7.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 8) {
@@ -139,11 +141,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/8.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/8.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 9) {
@@ -154,11 +156,11 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/9.1.jpg" width="${k}" height="${k}">
 				</div>
-				<div class="col">
-										
+				<div class="prez ${big ? 'col-6': 'col-12'}">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/9.2.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 10) {
@@ -169,11 +171,8 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
-				</div>
-				<div class="col">
-										
+				<div class="prez col-12">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/10.1.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} else if (count == 11) {
@@ -184,11 +183,8 @@ const makeMedia = (count) => {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-
-				</div>
-				<div class="col">
-										
+				<div class="prez col-12">
+					<img style="-webkit-user-select: none;cursor: zoom-in;" src="prez/11.1.jpg" width="${k}" height="${k}">
 				</div>
 			</div>`;
 	} 
