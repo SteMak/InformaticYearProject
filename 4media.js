@@ -26,7 +26,7 @@ const makeMedia = (count) => {
 		result +=
 			`<div class="row">
 				<div class="col text-left">
-					<h3>Зміст</h3>
+					<h5>Зміст</h5>
 				</div>
 			</div>
 			<div class="row">
